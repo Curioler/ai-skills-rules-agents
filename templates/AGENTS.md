@@ -62,6 +62,7 @@ Update in the same commit:
 - A significant choice with alternatives → a new file in `docs/decisions/`
 - Something you had to decide but were unsure about → `docs/open-questions.md`
 - Milestone progress → `docs/plan.md`
+- A lesson about working in this repo — a tooling quirk, an environment limitation, a mistake that cost time or budget and how to avoid repeating it → `docs/learning.md`, one dated entry
 
 ## Git
 

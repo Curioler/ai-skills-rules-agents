@@ -15,6 +15,7 @@ Index of where everything lives. Update whenever a directory is added or moved.
 | See what is being built now | [plan.md](plan.md) |
 | Know why something was chosen | [decisions/](decisions/) |
 | Find what has not been decided | [open-questions.md](open-questions.md) |
+| Learn how to work in this repo without repeating a past mistake | [learning.md](learning.md) |
 | Write or follow a design | [specs/](specs/) |
 | Work as a coding agent | [../AGENTS.md](../AGENTS.md) |
 
@@ -29,6 +30,7 @@ docs/
 ├── glossary.md         # precise meaning of every domain term
 ├── plan.md             # milestones and progress
 ├── open-questions.md   # deliberately undecided
+├── learning.md         # how to work in this repo — session/tooling lessons
 ├── decisions/          # one file per significant choice, with reasoning
 └── specs/              # designs, written before they are built
 ```
