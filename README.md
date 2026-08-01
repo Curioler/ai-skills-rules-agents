@@ -41,7 +41,7 @@ Use this to start. Use that to keep going.
 
 ### Templates
 
-[templates/](templates/) holds the files a new project starts with — `AGENTS.md` and a `docs/` tree. They are skeletons with guidance in them, meant to be filled in, not shipped as-is.
+[templates/](templates/) holds the files a new project starts with — `AGENTS.md`, a `CLAUDE.md` pointing at it, a `.gitattributes`, and a `docs/` tree. They are skeletons with guidance in them, meant to be filled in, not shipped as-is.
 
 ## Installing
 

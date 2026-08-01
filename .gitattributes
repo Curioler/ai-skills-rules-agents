@@ -1,0 +1,29 @@
+# Normalise line endings so a file edited on Windows and a file edited on
+# macOS or Linux produce the same diff.
+#
+# Without this, git warns on every commit that LF will be replaced by CRLF,
+# and eventually you get a diff where an entire file appears rewritten
+# because the line endings flipped. That is genuinely confusing when you are
+# trying to review what an agent changed.
+
+* text=auto eol=lf
+
+# Files that must keep CRLF
+*.bat   text eol=crlf
+*.cmd   text eol=crlf
+*.ps1   text eol=crlf
+
+# Binary — never touch
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.webp  binary
+*.ico   binary
+*.pdf   binary
+*.woff  binary
+*.woff2 binary
+*.ttf   binary
+*.otf   binary
+*.zip   binary
+*.gz    binary

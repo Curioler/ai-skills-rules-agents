@@ -31,11 +31,13 @@ Useful when a project needs a variant of one of these and you do not want it app
 ## Starting a new project from the templates
 
 ```bash
-cp templates/AGENTS.md /path/to/new-project/
+cp templates/AGENTS.md templates/CLAUDE.md templates/.gitattributes /path/to/new-project/
 cp -r templates/docs /path/to/new-project/
 ```
 
 Then say *"use project-bootstrap"* and work through it. The templates are skeletons — the placeholders are prompts, and a template left unfilled is worse than no template, because it looks like documentation.
+
+`.gitattributes` is worth copying on the very first commit rather than later. It normalises line endings, which stops git warning on every commit and — more importantly — stops you eventually seeing a diff where a whole file looks rewritten because its line endings flipped. That is hard to read past when you are trying to check what an agent actually changed.
 
 ## Checking it worked
 
