@@ -37,6 +37,14 @@ cp -r templates/docs /path/to/new-project/
 
 Then say *"use project-bootstrap"* and work through it. The templates are skeletons — the placeholders are prompts, and a template left unfilled is worse than no template, because it looks like documentation.
 
+## Using them on an existing project
+
+Say *"let's start a new session"* (or *"wrap this up"*) at the end of a working session and `session-handoff` runs: it updates the docs the session invalidated and hands back a prompt to paste into the next one.
+
+It works on any project with a `docs/` tree roughly like `templates/`. It degrades gracefully — files that do not exist are skipped, not created — so it is worth trying before adopting the whole template set.
+
+One thing to do in the project itself: **list every doc in `AGENTS.md`'s documentation duties, including `README.md` and `docs/context.md`.** The skill checks the unassigned files precisely because they are the ones that rot, but a rule in `AGENTS.md` catches them during the session rather than at the end of it.
+
 `.gitattributes` is worth copying on the very first commit rather than later. It normalises line endings, which stops git warning on every commit and — more importantly — stops you eventually seeing a diff where a whole file looks rewritten because its line endings flipped. That is hard to read past when you are trying to check what an agent actually changed.
 
 ## Checking it worked
