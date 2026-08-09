@@ -51,6 +51,8 @@ One thing to do in the project itself: **list every doc in `AGENTS.md`'s documen
 
 Start a session and ask which skills are available, or type `/` and look for `project-bootstrap` in the list. If a skill does not appear, check that the file is named `SKILL.md` in capitals and that its frontmatter has both `name` and `description`.
 
+**Skills become available immediately; agents do not.** Copying a skill in mid-session registers it right away, but the agent registry is read once at session start — a freshly copied agent fails with "Agent type not found" until the next session. That is not a broken install, and re-copying will not fix it. Either wait for the next session, or dispatch a `general-purpose` agent with the agent file's instruction body pasted into the prompt, which behaves the same.
+
 ## Keeping them current
 
 These came out of one project. The second project will find things that are wrong or missing — a rule that did not survive contact, a template section nobody filled in, a question that should have been asked earlier.
