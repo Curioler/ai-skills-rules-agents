@@ -28,6 +28,38 @@ Three consequences that matter more than any style rule below:
 
 Explain significant trade-offs in plain language *before* committing to them.
 
+## Rules that don't bend
+
+<!-- Keep this section verbatim. Every rule here exists because its absence
+     cost something real: a decision whose reasoning became unrecoverable, a
+     "should work" that didn't, an idea lost because it arrived mid-task. -->
+
+- **A new concept gets a spec before code**, and a decision record with its
+  reasoning — not just what was chosen, but what was rejected and why. A record
+  that lists only the winner cannot be re-evaluated later.
+
+- **Reversing a decision means appending, never rewriting.** Add a dated
+  Addendum that argues whether the old reasoning still holds for the old case or
+  was simply overridden. A silent edit makes the original reasoning worthless to
+  anyone reading it later — including you, months on.
+
+- **Never claim something works without demonstrating it.** Real test output, a
+  real command's real result, a real screenshot. "Should work" is not a result.
+  If a tool's own log seems to contradict what you expect, verify independently
+  before believing either — a stale process serving old code will happily report
+  a healthy status.
+
+- **Never present a stub, mock or placeholder as finished work.** If something is
+  incomplete, say so plainly and say what is missing.
+
+- **Capture stray ideas without following them.** Anything that occurs mid-task
+  and is not the task goes to `docs/ideas.md` as one line, no design. That is
+  what keeps it from being lost *and* from derailing the work in progress.
+
+- **Ask before anything hard to reverse** — production database changes,
+  force-pushes, deleting data, publishing to a public domain. Every time, not
+  just the first time. Approval in one context does not carry to the next.
+
 ## Architecture rules
 
 <!-- These are the rules that stop the codebase degrading. State them as
@@ -63,6 +95,7 @@ Update in the same commit:
 - Something you had to decide but were unsure about → `docs/open-questions.md`
 - Milestone progress → `docs/plan.md`
 - A lesson about working in this repo — a tooling quirk, an environment limitation, a mistake that cost time or budget and how to avoid repeating it → `docs/learning.md`, one dated entry
+- An idea that is not the current task → `docs/ideas.md`, one line, no design
 
 ## Git
 

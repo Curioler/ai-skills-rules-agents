@@ -64,6 +64,7 @@ Copy from `templates/` and fill in. The set, and why each earns its place:
 | `docs/plan.md` | Milestones with observable completion criteria. |
 | `docs/open-questions.md` | What is deliberately undecided. |
 | `docs/learning.md` | Session/tooling lessons — what wasted budget last time, so the next session doesn't repeat it. Starts empty; fills in as the build hits real friction. |
+| `docs/ideas.md` | One line per stray thought that is not the current task, so it is neither lost nor followed. Starts empty. `session-handoff` expects this file to exist. |
 | `docs/decisions/` | One record per significant choice, with alternatives. |
 | `docs/specs/` | Designs, agreed before they are built. |
 
