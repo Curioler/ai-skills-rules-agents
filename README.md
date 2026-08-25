@@ -35,6 +35,7 @@ Use `project-bootstrap` to start, `session-handoff` at each session boundary.
 | [solo-with-agents](skills/solo-with-agents/SKILL.md) | The builder is alone, relying on coding agents, possibly new to the stack. |
 | [design-records](skills/design-records/SKILL.md) | Setting up decisions, open questions and specs so nothing gets decided by accident. |
 | [session-handoff](skills/session-handoff/SKILL.md) | Ending a session, or opening the next one. Updates the docs, then writes the prompt to paste into a fresh session. |
+| [deploying-to-railway](skills/deploying-to-railway/SKILL.md) | Deploying to Railway, or debugging a deployment that isn't behaving — hard-won rules on auto-deploy, databases, Dockerfiles, and the edge proxy. |
 
 ### Agents
 
