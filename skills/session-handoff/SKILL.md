@@ -39,6 +39,8 @@ A doc that has not moved in dozens of commits is not necessarily wrong — a `st
 
 ### 2. Update what this session actually invalidated
 
+**The table below lists default paths — check the project's own `AGENTS.md`/`CLAUDE.md` documentation-duties list first, and use that instead if it differs.** Some projects split part of this out: a separate "blueprint" or "design" repo holding decisions, open questions and a glossary as the source of truth, with the code repo's own `AGENTS.md` explicitly saying it keeps no local copy of those, specifically to avoid drift between two versions of the same record. If that's this project, the equivalent files (and their own naming/numbering convention) live in that other repo, not at the paths below — go there instead of creating a second, competing copy in this one. The underlying duty is the same either way: whatever holds current project state should reflect what this session just did.
+
 Only the live session knows this part. Work the list:
 
 | File | Update when |

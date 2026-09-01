@@ -7,6 +7,8 @@ description: Use when setting up or maintaining a project's decision records, op
 
 Three documents that work together. Most projects keep the first and skip the second, which is the wrong one to skip.
 
+**Check before assuming these paths.** `docs/decisions/`, `docs/open-questions.md` and `docs/specs/` are the default when a project keeps its own design record locally — the common case. Some projects deliberately do not: a split architecture with a separate "blueprint" or "design" repo as the source of truth, and an explicit rule in the code repo's `AGENTS.md`/`CLAUDE.md` against keeping a local copy, specifically to avoid two documents disagreeing about the same decision. That rule is usually stated plainly near the top of `AGENTS.md` (e.g. "this project does not keep local `docs/decisions/` — the blueprint repo holds it"). **Read the project's own `AGENTS.md`/`CLAUDE.md` first.** If it names a separate repo for this, use that repo's own conventions instead of creating a parallel `docs/decisions/` here — the numbering scheme, file naming, and format may differ (PDR/ADR-numbered files rather than `000N-topic.md`, for instance), and the goal is to follow what the project already does, not to introduce a second, competing record.
+
 ## Decision records
 
 One file per significant choice, in `docs/decisions/`, numbered and never renamed.
